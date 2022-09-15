@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="card" style="width: 18rem;">
+                <img src="{{order.item.image.url}}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{order.item.book_name}}</h5>
+                    <p class="card-text">price:{{order.item.price}}</p>
+                    <p class="card-text">address:{{order.address}}</p>
+                    <p class="card-text">user:{{order.user}}</p>
+                    <p class="card-text">email:{{order.user.email}}</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+
+
+{%endblock%}
